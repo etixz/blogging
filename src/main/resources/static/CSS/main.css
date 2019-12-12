@@ -38,7 +38,7 @@ body{
 }
 
 .blogwrap:nth-child(even){
-    background-color: whitesmoke;
+    background-color: #fffbee;
     padding: 20px;
     margin-top: 0 !important;
     width: 100%;
@@ -55,16 +55,22 @@ body{
     margin-bottom: 10px !important;
     border-style: solid !important;
     border-width: 0.5px !important;
+    border-color: black !important;
     border-radius: 2em;
 }
 
 .blogwrap:nth-child(even) a{
-    background-color: wheat;
-    color: black;
+    background-color: #aba27d;
+    color: white;
     padding: 10px !important;
     display: inline-block !important;
-    text-align: center !important;
+    text-align: right !important;
     border-radius: 2em;
+    padding-left:15px !important;
+    padding-right:15px !important;
+    border-style: solid !important;
+    border-color: black!important;
+    border-width: 0.5px;
 }
 
 .blogwrap:nth-child(odd) a{
@@ -72,11 +78,31 @@ body{
     color: black;
     padding: 10px !important;
     display: inline-block !important;
-    text-align: center !important;
+    text-align: left !important;
     border-radius: 2em;
+    padding-left:15px !important;
+    padding-right:15px !important;
+    border-style: solid !important;
+    border-width: 0.5px;
+}
+.blogwrap:nth-child(even) a:hover{
+    background-color: indianred;
+    opacity: 80%;
+}
+.blogwrap:nth-child(odd) a:hover{
+    background-color: indianred;
+    opacity: 80%;
 }
 .error{
     color: red !important;
     font-weight: bold;
 
+}
+.blogwrap:nth-child(odd) .delbtn{
+    text-align: left !important;
+    margin-left: 10%;
+}
+.blogwrap:nth-child(even) .delbtn{
+    text-align: right !important;
+    margin-right: 10%;
 }
